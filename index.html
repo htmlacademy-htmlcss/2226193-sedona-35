@@ -7,39 +7,47 @@
   </head>
   <body>
     <header class="main-header">
-      <nav>
+      <nav class="navigation">
         <logo>
-
+          <a class="main-header-logo">
+            <img src="#" width="170" height="70" alt="Логотип сайта городка Седона">
+          </a>
         </logo>
-        <ul>
-          <li>
-            <p>Главная</p>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li>
-            <p>О Седоне</p>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li>
-            <p>Гостиницы</p>
-          </li>
-          <li>
-            <p>поиск</p>
-          </li>
-          <li>
-            <p>избранное</p>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
-        <btn>
-          <p>Хочу сюда!</p>
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link">
+              <span class="visually-hidden">Поиск</span>
+            <a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#" alt="Перейти к списку гостиниц, добавленных в избранное ">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+        </ul>
+        <btn type="button">
+          <a href="#">Хочу сюда!</a>
         </btn>
       </nav>
+      <hero>
+        <span>Welcome</span>
+        <span>- to the gorgeous -</span>
+        <h1>Sedona</h1>
+        <span>"Because the Grand Canyon sucks!"</span>
+      </hero>
     </header>
     <main>
-      <hero>
-        <p>Welcome</p>
-        <p>- to the gorgeous -</p>
-        <h1>Sedona</h1>
-        <p>"Because the Grand Canyon sucks!"</p>
-      </hero>
       <section class="description">
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -50,7 +58,7 @@
           <li>
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img>
+            <img src="#" alt="Вид на стилизованные под старину здания городка в окружении цветущих деревьев">
           </li>
           <li>
             <h3>Небольшая площадь</h3>
@@ -65,7 +73,7 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li>
-            <img>
+            <img src="#" alt="Cкальный выступ, ведущий к обрыву с живописным видом">
             <h3>Там есть Мост Дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -75,17 +83,17 @@
         <h2>Рекомендации</h2>
         <ul>
           <li>
-            <img>
+            <img src="#">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li>
-            <img>
+            <img src="#">
             <h3>Еда</h3>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
-            <img>
+            <img src="#">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -95,23 +103,37 @@
         <h2>Поиск гостиницы</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <btn>Поиск гостиницы в Cедоне</btn>
+        <btn>
+          <a href="#" >Поиск гостиницы в Cедоне</a>
+        </btn>
       </section>
     </main>
     <footer>
       <section class="notifications-subscription">
         <p>Подпишитесь на рассылку</p>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input>
-        <btn>Подписаться</btn>
+        <p>
+          <input type="email">
+          <btn type="submit">Подписаться</btn>
+        </p>
       </section>
       <ul>
-        <li>vk</li>
-        <li>tg</li>
-        <li>yt</li>
+        <li>
+          <a href="https://vk.com/htmlacademy" class="visually-hidden alt="Перейти в сообщество вконтакте">vk</a>
+        </li>
+        <li>
+          <a href="https://t.me/htmlacademy" class="visually-hidden alt="Перейти в группу в телеграме">tg</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/htmlacademyru" class="visually-hidden alt="Перейти на канал в youtube">yt</a>
+        </li>
       </ul>
-      <p>+7 (812) 812-12-12</p>
-      <logo></logo>
+      <address>+7 (812) 812-12-12</address>
+      <logo>
+        <a href="https://htmlacademy.ru/">
+          <img src="#" alt="Логотип сайта html academy">
+        </a>
+      </logo>
     </footer>
   </body>
 </html>
