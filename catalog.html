@@ -46,11 +46,9 @@
                     </a>
                 </li>
                 <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">Каталог</a>
+                    <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
             </ol>
-        </header>
-        <section class="">
             <h2 class="visually-hidden">Фильтры</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
@@ -61,12 +59,12 @@
                                 <input class="control-input" type="checkbox" name="pool" checked>Бассейн
                             </label>
                         </li>
-                        <li class="catalog-filter-item"></li>
+                        <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="parking" checked>Парковка
                             </label>
                         </li>
-                        <li class="catalog-filter-item"></li>
+                        <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="checkbox" name="wifi">Wi-Fi
                             </label>
@@ -75,28 +73,214 @@
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Тип жилья:</legend>
-
+                    <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                            <label class="control">
+                                <input class="control-input" type="radio" name="type" value="hotel" checked>Гостиница
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">
+                                <input class="control-input" type="radio" name="type" value="motel">Мотель
+                            </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <label class="control">
+                                <input class="control-input" type="radio" name="type" value="apartment">Апартаменты
+                            </label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Стоимость, :</legend>
-
+                    <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
+                    <label for="price-min-field">от</label>
+                    <input type="number" name="price-min" id="price-min-field" value="0">
+                    <label for="price-max-field">до</label>
+                    <input type="number" name="price-max" id="price-max-field" value="9000">
                 </fieldset>
-
                 <button class="button button-blue" type="submit">Применить</button>
                 <button class="button button-none" type="reset">Сбросить</button>
             </form>
-        </section>
-        <section class="sorting">
-
-        </section>
+        </header>
         <section class="catalog-hotels">
-
-        </section>
-        <section class="pagination">
-
+            <h2 class="visually-hidden">Сортировка</h2>
+            <p class="catalog-sorting-total">Найдено гостиниц: 38</p>
+            <select class="select-control" aria-label="Сортировка отображения">
+                <option class="catalog-sorting-option" selected>Сначала дешевые</option>
+                <option class="catalog-sorting-option">Сначала дорогие</option>
+                <option class="catalog-sorting-option">Сначала популярные</option>
+            </select>
+            <ul class="catalog-sorting-view-list">
+                <li class="catalog-sorting-view-item">
+                    <a class="button-sorting button-sorting-active" href="#">
+                        <span class="visually-hidden">Показать в виде карточек</span>
+                    </a>
+                </li>
+                <li class="catalog-sorting-view-item"></li>
+                    <a class="button-sorting" href="#">
+                        <span class="visually-hidden">Показать в виде крупных карточек</span>
+                    </a>
+                </li>
+                    <li class="catalog-sorting-view-item"></li>
+                    <a class="button-sorting" href="#">
+                        <span class="visually-hidden">Показать в виде списка</span>
+                    </a>
+                </li>
+            </ul>
+            <h2 class="visually-hidden">Список гостиниц</h2>
+            <ul class="hotels-list">
+                <li class="hotel-card">
+                    <a class="hotel-card-link" href="#">
+                        <img class="hotel-card-img" src="#">
+                        <h3 class="hotel-card-title">Amara Resort &#38; Spa</h3>
+                    </a>
+                    <table class="hotel-card-info">
+                        <tr>
+                            <td>
+                                <p class="hotel-card-type">Гостиница</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-cost">От 4000 &#8381;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="button" href="#">Подробнее</a>
+                            </td>
+                            <td>
+                                <button class="button button-blue" href="#">В избранное</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="hotel-card-stars">тут будут 5 звезд</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-rating">Рейтинг: 8,5</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="hotel-card">
+                    <a class="hotel-card-link" href="#">
+                        <img class="hotel-card-img" src="#">
+                        <h3 class="hotel-card-title">Amara Resort &#38; Spa</h3>
+                    </a>
+                    <table class="hotel-card-info">
+                        <tr>
+                            <td>
+                                <p class="hotel-card-type">Гостиница</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-cost">От 4000 &#8381;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="button" href="#">Подробнее</a>
+                            </td>
+                            <td>
+                                <button class="button button-blue" href="#">В избранное</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="hotel-card-stars">тут будут 5 звезд</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-rating">Рейтинг: 8,5</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="hotel-card">
+                    <a class="hotel-card-link" href="#">
+                        <img class="hotel-card-img" src="#">
+                        <h3 class="hotel-card-title">Amara Resort &#38; Spa</h3>
+                    </a>
+                    <table class="hotel-card-info">
+                        <tr>
+                            <td>
+                                <p class="hotel-card-type">Гостиница</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-cost">От 4000 &#8381;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="button" href="#">Подробнее</a>
+                            </td>
+                            <td>
+                                <button class="button button-blue" href="#">В избранное</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="hotel-card-stars">тут будут 5 звезд</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-rating">Рейтинг: 8,5</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="hotel-card">
+                    <a class="hotel-card-link" href="#">
+                        <img class="hotel-card-img" src="#">
+                        <h3 class="hotel-card-title">Amara Resort &#38; Spa</h3>
+                    </a>
+                    <table class="hotel-card-info">
+                        <tr>
+                            <td>
+                                <p class="hotel-card-type">Гостиница</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-cost">От 4000 &#8381;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="button" href="#">Подробнее</a>
+                            </td>
+                            <td>
+                                <button class="button button-blue" href="#">В избранное</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="hotel-card-stars">тут будут 5 звезд</p>
+                            </td>
+                            <td>
+                                <p class="hotel-card-rating">Рейтинг: 8,5</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <ul class="pagination">
+                <li class="pagination-item">
+                    <a class="pagination-link pagination-current">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                    <p>...</p>
+                </li>
+                <li class="pagination-item">
+                    <a class="pagination-link" href="#">10</a>
+                </li>
+            </ul>
         </section>
     </main>
-    <section class="notifications-subscription">
+    <section class="notifications-subscription-inner">
         <h2 class="notifications-subscription-title">Подпишитесь на рассылку</h2>
         <p class="notifications-subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="notifications-subscription-form" action="https://echo.htmlacademy.ru/" method="post">
