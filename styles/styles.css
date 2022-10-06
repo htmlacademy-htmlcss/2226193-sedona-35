@@ -35,9 +35,202 @@
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    margin: 0;
 
+    background-color: #ffffff;
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #333333;
+}
+
+.navigation-list, .navigation-user, .adventages-list, .footer-social-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+
+/*main-header*/
+
+
+.navigation-item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.navigation-link, .navigation-user-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navigation-link-current {
+    border-bottom: 2px solid #756257;
+}
+
+.favorites-number {
+    width: 20px;
+    height: 20px;
+    background-color: #7DB54F;
+    border-radius: 10px;
+
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.button {
+    background-color: #756157;
+    border-radius: 4px;
+    border: 0;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.button-small {
+    width: 160px;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/*main-index*/
+
+
+.hero {
+    background-color: rgb(132, 198, 231);
+    background-image: url(../images/hero-background.jpg);
+    width: 1200px;
+
+    vertical-align: middle;
+}
+
+.description {
+
+}
+
+.description-title, .find-hotel-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/*adventages*/
+
+.adventages-item {
+    width: 400px;
     font-size: 18px;
     line-height: 21px;
+}
 
+.adventages-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+span.adventages-decor {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.adventage-blue, .adventage-blue .adventages-title {
+    width: 1200px;
+    background-color: #82B3D3;
+    color: #ffffff;
+}
+
+.adventage-light-grey {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.adventage-grey {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+span.decor-on-blue {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.button-big {
+    width: 376px;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+
+/*notifications-subscription-main*/
+
+.notifications-subscription-main {
+    background-color: rgb(143, 203, 230);
+    background-image: url(../images/subscribe-background.jpg);
+    width: 1200px;
+    height: 414.86px;
+
+    color:#ffffff;
+}
+
+.notifications-subscription-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.field {
+    width: 452px;
+    height: 52px;
+    border: 0;
+    padding: 0;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.button-blue {
+    width: 232px;
+    height: 52px;
+    padding: 0;
+
+    background-color: #82B3D3;
+}
+
+
+/*footer*/
+
+.contacts-phone {
+    color: #000000;
+    text-decoration: none;
+
+    font-size: 40px;
+    line-height: 40px;
 }
