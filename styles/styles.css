@@ -48,7 +48,7 @@ body {
     color: #333333;
 }
 
-.navigation-list, .navigation-user, .adventages-list, .footer-social-list {
+.navigation-list, .navigation-user, .adventages-list, .footer-social-list, .breadcrumbs, .catalog-filter-list, .catalog-sorting-view-list, .hotels-list, .pagination {
     list-style-type: none;
     padding: 0;
 }
@@ -64,7 +64,37 @@ body {
 }
 
 
-/*main-header*/
+/*Buttons*/
+
+.button {
+    background-color: #756157;
+    border-radius: 4px;
+    border: 0;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.button-big {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.button-blue {
+    padding: 0;
+    background-color: #82B3D3;
+}
+
+.button-no-color {
+    background-color: rgb(255, 255, 255, 0);
+}
+
+
+/*Header*/
 
 
 .navigation-item {
@@ -73,7 +103,7 @@ body {
     line-height: 24px;
 }
 
-.navigation-link, .navigation-user-link {
+.navigation-link, .navigation-user-link, .hotel-card-link, .pagination-link {
     color: #000000;
     text-decoration: none;
 }
@@ -93,26 +123,6 @@ body {
     line-height: 10px;
 }
 
-.button {
-    background-color: #756157;
-    border-radius: 4px;
-    border: 0;
-
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.button-small {
-    width: 160px;
-
-    font-size: 16px;
-    line-height: 20px;
-}
-
 
 /*main-index*/
 
@@ -123,10 +133,6 @@ body {
     width: 1200px;
 
     vertical-align: middle;
-}
-
-.description {
-
 }
 
 .description-title, .find-hotel-title {
@@ -179,22 +185,136 @@ span.decor-on-blue {
     background-color: rgb(255, 255, 255, 0.3);
 }
 
-.button-big {
-    width: 376px;
+
+/*Catalog*/
+
+
+.inner-header {
+    background: rgb(175, 128, 84) url(../images/catalog-filter-background.jpg) no-repeat;
+    width: 1200px;
+
+    color: #ffffff;
+}
+
+.breadcrumbs-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.catalog-filter-title {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.control-input {
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+
+.radio {
+    border-radius: 4px;
+}
+
+.price-input {
+    background-color: #F2F2F2;
+
+    width: 143px;
+    height: 48px;
+    border-radius: 4px 0px 0px 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.price-min-field, .price-max-field {
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.catalog-sorting-total {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.select-control, .button-sorting {
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.button-sorting-active {
+    border-color: #000000;
+}
+
+.hotel-card {
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+}
+
+.hotel-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.hotel-card-info {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.hotel-card-cost {
+    text-align: right;
+}
+
+.hotel-card-rating {
+    background-color: #F2F2F2;
+    border-radius: 4px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pagination-item {
+    width: 60px;
+    height: 60px;
+
+    background: #82B3D3;
+    border-radius: 4px;
+
+    color: #ffffff;
+    font-weight: 700;
     font-size: 20px;
     line-height: 36px;
 }
 
+.pagination-current {
+    background: #F2F2F2;
+    color: #000000;
+}
 
 /*notifications-subscription-main*/
 
-.notifications-subscription-main {
-    background-color: rgb(143, 203, 230);
-    background-image: url(../images/subscribe-background.jpg);
+
+.notifications-subscription-main, .notifications-subscription-inner {
+    background-color: #ffffff;
     width: 1200px;
     height: 414.86px;
-
-    color:#ffffff;
 }
 
 .notifications-subscription-title {
@@ -202,6 +322,14 @@ span.decor-on-blue {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    color: #000000;
+}
+
+.notifications-subscription-main {
+    background-color: rgb(143, 203, 230);
+    background-image: url(../images/subscribe-background.jpg);
+
+    color: #ffffff;
 }
 
 .field {
@@ -215,15 +343,6 @@ span.decor-on-blue {
     color: #000000;
     opacity: 0.6;
 }
-
-.button-blue {
-    width: 232px;
-    height: 52px;
-    padding: 0;
-
-    background-color: #82B3D3;
-}
-
 
 /*footer*/
 
