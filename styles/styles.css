@@ -79,6 +79,7 @@ body {
 
 .button {
     margin: 0 20px;
+    padding: 8px 50px;
 
     background-color: #756157;
     border-radius: 4px;
@@ -98,11 +99,11 @@ body {
 }
 
 .button-blue {
-    padding: 0;
     background-color: #82B3D3;
 }
 
 .button-no-color {
+    padding: 0;
     background-color: rgb(255, 255, 255, 0);
 }
 
@@ -128,17 +129,17 @@ body {
 .navigation-logo {
     margin-left: 70px;
     margin-right: 14px;
+    margin-bottom: -6px;
 }
 
 .navigation-item {
-    margin: 0 16px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
 
 .navigation-link {
-    padding: 20px 0;
+    padding: 20px 16px;
 }
 
 .navigation-link-current {
@@ -178,12 +179,11 @@ body {
 
     background-color: rgb(132, 198, 231);
     background-image: url(../images/hero-background.jpg);
+
     width: 1200px;
 
     padding-top: 51px;
     padding-bottom: 82px;
-
-    vertical-align: middle;
 }
 
 .description{
@@ -202,22 +202,22 @@ body {
 .adventages-list {
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
+}
+
+.adventages-item {
+    width: 400px;
+    padding-top: 103px;
 }
 
 .adventage-card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.adventages-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .adventages-title {
+    margin-bottom: 30px;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -226,7 +226,8 @@ body {
 }
 
 span.adventages-decor {
-    display: block;
+    display: inline-block;
+    margin-bottom: 30px;
     width: 60px;
     height: 2px;
     background-color: rgb(0, 0, 0, 0.3);
@@ -249,6 +250,14 @@ span.decor-on-blue {
     background-color: rgb(255, 255, 255, 0.3);
 }
 
+.adventages-image {
+    margin-bottom: 30px;
+}
+
+.find-hotel {
+    margin: 96px auto;
+}
+
 .find-hotel-description {
     font-size: 22px;
     line-height: 26px;
@@ -257,15 +266,15 @@ span.decor-on-blue {
 /*Catalog*/
 
 .inner-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-
     background: rgb(175, 128, 84) url(../images/catalog-filter-background.jpg) no-repeat;
     background-size: cover;
 
     color: #ffffff;
+}
+
+.inner-container {
+    margin: 0 auto;
+    width: 1060px;
 }
 
 .breadcrumbs {
@@ -273,12 +282,15 @@ span.decor-on-blue {
 }
 
 .breadcrumbs-link {
+    margin-right: 10px;
+
     color: #ffffff;
     text-decoration: none;
 }
 
 .catalog-filter {
     display: flex;
+    align-items: center;
 }
 
 .catalog-filter-title {
@@ -317,11 +329,30 @@ span.decor-on-blue {
     color: #000000;
 }
 
-.catalog-sorting-total {
+.catalog-hotels {
+    margin: 0 auto;
+    width: 1060px;
+}
+
+.sorting-container {
+    display: flex;
+}
+
+.sorting-total {
+    margin-right: auto;
+
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
+}
+
+.select-control {
+    margin-right: 70px;
+}
+
+.button-sorting:not(:last-child) {
+    margin-right: 8px;
 }
 
 .select-control, .button-sorting {
@@ -333,15 +364,22 @@ span.decor-on-blue {
     border-color: #000000;
 }
 
-.catalog-hotels {
+.hotels-list {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
 
+    margin-bottom: 20px;
     width: 1060px;
-    margin: 0 auto;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 340px;
+
     border: 1px solid #E6E6E6;
     border-radius: 4px;
 }
@@ -371,7 +409,16 @@ span.decor-on-blue {
     text-transform: uppercase;
 }
 
+.pagination {
+    display: flex;
+    align-items: flex-start;
+}
+
 .pagination-item {
+    margin-right: 8px;
+    width: 60px;
+    height: 60px;
+
     background: #82B3D3;
     border-radius: 4px;
 
@@ -379,6 +426,10 @@ span.decor-on-blue {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
+}
+
+.pagination-item:last-child {
+    margin: 0;
 }
 
 .pagination-current {
@@ -391,6 +442,8 @@ span.decor-on-blue {
 
 
 .notifications-subscription-main, .notifications-subscription-inner {
+    padding: 96px 258px 104px;
+    margin-bottom: 40px;
     background-color: #ffffff;
 }
 
@@ -420,6 +473,7 @@ span.decor-on-blue {
     opacity: 0.6;
 }
 
+
 /*Footer*/
 
 
@@ -427,13 +481,21 @@ span.decor-on-blue {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 1060px;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .footer-social-list {
     display: flex;
 }
 
+.footer-socials-item-link {
+    padding: 0 10px;
+}
+
 .contacts-phone {
+    margin-bottom: 30px;
     color: #000000;
     text-decoration: none;
 
