@@ -36,7 +36,9 @@
 
 body {
     margin: 0;
+    height: 100%;
     background-color: #F2F2F2;
+    box-sizing: border-box;
 
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -47,9 +49,20 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+h1, h2, h3, p {
+    margin: 0;
 }
 
 .list {
@@ -78,7 +91,7 @@ body {
 
 
 .button {
-    margin: 0 20px;
+    margin: 0;
     padding: 8px 50px;
 
     background-color: #756157;
@@ -122,8 +135,9 @@ body {
 .navigation-user {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .navigation-logo {
@@ -211,6 +225,10 @@ body {
     padding-top: 103px;
 }
 
+.adventages-description-image {
+    width: 800px;
+}
+
 .adventage-card {
     display: flex;
 }
@@ -258,7 +276,13 @@ span.decor-on-blue {
     margin: 96px auto;
 }
 
+.find-hotel-title {
+    margin-bottom: 20px;
+}
+
 .find-hotel-description {
+    margin-bottom: 54px;
+
     font-size: 22px;
     line-height: 26px;
 }
@@ -266,6 +290,10 @@ span.decor-on-blue {
 /*Catalog*/
 
 .inner-header {
+    padding-top: 35px;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+
     background: rgb(175, 128, 84) url(../images/catalog-filter-background.jpg) no-repeat;
     background-size: cover;
 
@@ -275,15 +303,24 @@ span.decor-on-blue {
 .inner-container {
     margin: 0 auto;
     width: 1060px;
+
+    text-align: left;
+}
+
+.inner-header-title {
+    margin-bottom: 8px;
 }
 
 .breadcrumbs {
     display: flex;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+    margin-right: 10px;
 }
 
 .breadcrumbs-link {
-    margin-right: 10px;
-
     color: #ffffff;
     text-decoration: none;
 }
@@ -291,16 +328,37 @@ span.decor-on-blue {
 .catalog-filter {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-filter-group-1, .catalog-filter-group-2 {
+   display: flex;
+}
+
+.catalog-filter-group {
+    margin-right: 70px;
+}
+
+.catalog-filter-buttons {
+    width: 191px;
 }
 
 .catalog-filter-title {
+    margin-bottom: 32px;
+
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
 
-.catalog-filter-title {
+.catalog-filter-item {
+    margin-bottom: 16px;
+
     line-height: 23px;
+}
+
+.catalog-filter-item:last-child {
+    margin-bottom: 0;
 }
 
 .control-input {
@@ -336,6 +394,9 @@ span.decor-on-blue {
 
 .sorting-container {
     display: flex;
+    align-items: center;
+
+    margin-bottom: 40px;
 }
 
 .sorting-total {
@@ -349,13 +410,23 @@ span.decor-on-blue {
 
 .select-control {
     margin-right: 70px;
+    padding: 14px 20px;
+
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 
-.button-sorting:not(:last-child) {
+.sorting-view-list {
+    display: flex;
+}
+
+.sorting-view-item:not(:last-child) {
     margin-right: 8px;
 }
 
-.select-control, .button-sorting {
+.button-sorting {
+    padding: 14px 12px;
+
     border: 2px solid #E5E5E5;
     border-radius: 4px;
 }
@@ -370,7 +441,7 @@ span.decor-on-blue {
     align-content: flex-start;
     justify-content: space-between;
 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 1060px;
     border-bottom: 1px solid #E6E6E6;
 }
@@ -412,24 +483,32 @@ span.decor-on-blue {
 .pagination {
     display: flex;
     align-items: flex-start;
+
+    margin-bottom: 70px;
 }
 
 .pagination-item {
     margin-right: 8px;
     width: 60px;
-    height: 60px;
 
     background: #82B3D3;
     border-radius: 4px;
 
-    color: #ffffff;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
 }
 
+.pagination-link {
+    vertical-align: middle;
+}
+
 .pagination-item:last-child {
     margin: 0;
+}
+
+.pagination-link {
+    color: #ffffff;
 }
 
 .pagination-current {
@@ -448,8 +527,14 @@ span.decor-on-blue {
 }
 
 .notifications-subscription-description {
+    margin-bottom: 54px;
+
     font-size: 22px;
     line-height: 26px;
+}
+
+.notifications-subscription-title {
+    margin-bottom: 20px;
 }
 
 .notifications-subscription-main {
@@ -459,8 +544,14 @@ span.decor-on-blue {
     color: #ffffff;
 }
 
-.notifications-subscription-title-main {
+.notifications-subscription-main .notifications-subscription-title-main {
     color: #ffffff;
+}
+
+.notifications-subscription-form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .field {
