@@ -144,7 +144,7 @@ h1, h2, h3, p {
 .navigation-logo {
     margin-left: 70px;
     margin-right: 14px;
-    margin-bottom: -6px;
+    margin-bottom: -8px;
 }
 
 .navigation-item {
@@ -226,7 +226,7 @@ h1, h2, h3, p {
 
 .adventages-item {
     width: 400px;
-    padding-top: 103px;
+    box-sizing: border-box;
 }
 
 .adventages-description-image {
@@ -235,9 +235,13 @@ h1, h2, h3, p {
 
 .adventage-card {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 92px 85px 111px;
 }
 
 .adventages-title {
+    justify-content: center;
     margin-bottom: 30px;
 
     font-weight: 700;
@@ -256,15 +260,19 @@ span.adventages-decor {
 }
 
 .adventage-blue, .adventage-blue .adventages-title {
+    display: flex;
+    width: 100%;
     background-color: #82B3D3;
     color: #ffffff;
 }
 
 .adventage-light-grey {
+    padding: 103px 85px 121px;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
 .adventage-grey {
+    padding: 103px 85px 121px;
     background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -449,8 +457,7 @@ span.decor-on-blue {
 .hotels-list {
     display: flex;
     flex-wrap: wrap;
-    /*align-content: flex-start;
-    justify-content: space-between;*/
+    justify-content: space-between;
 
     margin-bottom: 40px;
     width: 1060px;
@@ -473,11 +480,13 @@ span.decor-on-blue {
   }
 
   .hotel-card-image {
+    margin-bottom: 16px;
     max-width: 100%;
     height: auto;
   }
 
 .hotel-card-title {
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -487,6 +496,7 @@ span.decor-on-blue {
 }
 
 .hotel-card-info {
+    width: 300px;
     text-align: left;
 }
 
@@ -500,6 +510,13 @@ span.decor-on-blue {
 
     text-align: center;
     text-transform: uppercase;
+}
+
+.hotel-card-info .button {
+    padding: 8px 0;
+    width: 140px;
+    height: 36px;
+    box-sizing: border-box;
 }
 
 .pagination {
@@ -556,7 +573,7 @@ padding: 12px 18.5px;
     line-height: 26px;
 }
 
-.notifications-subscription-title {
+.notifications-subscription-title, .notifications-subscription-title-main {
     margin-bottom: 20px;
 }
 
@@ -582,9 +599,17 @@ padding: 12px 18.5px;
     border: 0;
     padding: 0;
 
+    background-color: #F2F2F2;
     line-height: 24px;
     color: #000000;
     opacity: 0.6;
+}
+
+.field-main {
+    width: 452px;
+    border: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
 
