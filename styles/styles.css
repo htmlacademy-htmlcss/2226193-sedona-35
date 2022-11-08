@@ -222,17 +222,32 @@ h1, h2, h3, p {
     left: 0;
     content: "";
     border-bottom: 2px solid #756257;
+    z-index: 1;
+}
+
+.navigation-user-item {
+    position: relative;
 }
 
 .navigation-user-link {
-    min-width: 20px;
-    min-height: 20px;
     padding: 22px 12px;
 }
 
-.favorites-number {
+.navigation-user-link:last-child {
+    margin-right: 20px;
+}
+
+.navigation-favorites::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    content: "12";
     width: 20px;
     height: 20px;
+    right: 23px;
+    top: -10px;
     background-color: #7DB54F;
     border-radius: 10px;
 
@@ -256,6 +271,7 @@ h1, h2, h3, p {
 .hero {
     display: flex;
     justify-content: center;
+    position: relative;
 
     background-color: rgb(132, 198, 231);
     background-image: url(../images/hero-background.jpg);
@@ -264,6 +280,17 @@ h1, h2, h3, p {
 
     padding-top: 51px;
     padding-bottom: 82px;
+}
+
+.hero::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/hero-background-decor.jpg.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    bottom: 0;
+    content: "";
 }
 
 .hero-description-img {
