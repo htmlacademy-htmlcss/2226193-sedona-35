@@ -239,13 +239,13 @@ h1, h2, h3, p {
     margin-right: 20px;
 }
 
-.navigation-favorites::before {
+.count-badge {
     display: flex;
     align-items: center;
     justify-content: center;
 
     position: absolute;
-    content: "12";
+    content: "";
     width: 20px;
     height: 20px;
     right: 23px;
@@ -414,159 +414,6 @@ h1, h2, h3, p {
 }
 
 
-/*Notifications subscription section*/
-
-
-.notifications-subscription {
-    padding: 96px 258px 104px;
-    max-width: 684px;
-    background-color: #ffffff;
-}
-
-.notifications-subscription-description {
-    margin-bottom: 54px;
-
-    font-size: 22px;
-    line-height: 26px;
-}
-
-.notifications-subscription-title, .notifications-subscription-title-main {
-    margin-bottom: 20px;
-}
-
-.notifications-subscription-main {
-    background: rgb(143, 203, 230) url(../images/subscribe-background.jpg) no-repeat 50% 50%;
-    background-size: cover;
-
-    color: #ffffff;
-}
-
-.notifications-subscription-main .notifications-subscription-title-main {
-    color: #ffffff;
-}
-
-.notifications-subscription-form {
-    display: grid;
-    grid-template-columns: 452px 232px;
-}
-
-.email-field {
-    width: 452px;
-    border: 0;
-    border-radius: 4px 0 0 4px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-
-    background-color: #F2F2F2;
-    font: inherit;
-    color: #000000;
-    opacity: 0.6;
-}
-
-.email-field:hover {
-    background-color: #E6E6E6;
-}
-
-.email-field:focus-visible {
-    background-color: #E6E6E6;
-    outline: 3px solid #83B3D3;
-}
-
-.email-field:active {
-    border: 2px solid #000000;
-    outline: 3px solid transparent;
-}
-
-.notifications-subscription-form .email-field-main {
-    background-color: #ffffff;
-    opacity: 1;
-}
-
-.email-field-main:hover {
-    background-color: #F2F2F2;
-}
-
-
-/*Footer*/
-
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1060px;
-    margin: 40px 70px 30px;
-}
-
-.footer-social-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 142px;
-}
-
-.footer-socials-item-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-}
-
-.social-icon {
-    color: #83B3D3;
-}
-
-.footer-socials-item-link:hover .social-icon {
-    color: #68A2CA;
-}
-
-.footer-socials-item-link:focus-visible .social-icon {
-    color: #68A2CA;
-}
-
-.footer-socials-item-link:active .social-icon {
-    color: #68A2CA;
-    opacity: 0.3;
-}
-
-.contacts-phone {
-    margin: 30px;
-    color: #000000;
-    text-decoration: none;
-
-    font-size: 40px;
-    line-height: 40px;
-}
-
-.contacts-phone:hover, .contacts-phone:focus-visible {
-    color: #756157;
-    outline: none;
-}
-
-.contacts-phone:active {
-    color: rgba(117, 97, 87, 0.3);
-}
-
-.footer-logo {
-    color: #000;
-}
-
-.footer-logo-link:hover .footer-logo {
-    color: #756157;
-}
-
-.footer-logo-link:focus {
-    outline: none;
-}
-
-.footer-logo-link:focus-visible .footer-logo {
-    color: #756157;
-}
-
-.footer-logo-link:active .footer-logo {
-    color: rgba(117, 97, 87, 0.3);
-}
-
-
 /*Pages.Catalog*/
 
 
@@ -677,7 +524,6 @@ h1, h2, h3, p {
 }
 
 /*Control*/
-
 .control {
     position: relative;
     display: block;
@@ -685,7 +531,6 @@ h1, h2, h3, p {
 }
 
 /*Mark*/
-
 .control-mark {
     position: absolute;
     top: 0;
@@ -742,7 +587,6 @@ h1, h2, h3, p {
 }
 
 /*Price range*/
-
 .range-scale {
     position: relative;
     height: 4px;
@@ -859,14 +703,12 @@ h1, h2, h3, p {
 
 /*Hotels*/
 
-
 .catalog-hotels {
     margin: 0 auto;
     width: 1060px;
 }
 
 /*Sorting*/
-
 .sorting-container {
     display: flex;
     align-items: center;
@@ -924,7 +766,6 @@ h1, h2, h3, p {
 }
 
 /*Hotels cards*/
-
 .card-grid-toggle {
     display: block;
     box-sizing: border-box;
@@ -1050,10 +891,7 @@ h1, h2, h3, p {
     text-transform: uppercase;
 }
 
-
 /*Pagination*/
-
-
 .pagination {
     display: flex;
     align-items: flex-start;
@@ -1120,4 +958,430 @@ h1, h2, h3, p {
 
 .pagination-item .pagination-link:not(.pagination-current):active {
     color: rgba(255, 255, 255, 0.3);
+}
+
+/*Notifications subscription section*/
+
+.notifications-subscription {
+    padding: 96px 258px 104px;
+    max-width: 684px;
+    background-color: #ffffff;
+}
+
+.notifications-subscription-description {
+    margin-bottom: 54px;
+
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.notifications-subscription-title, .notifications-subscription-title-main {
+    margin-bottom: 20px;
+}
+
+.notifications-subscription-main {
+    background: rgb(143, 203, 230) url(../images/subscribe-background.jpg) no-repeat 50% 50%;
+    background-size: cover;
+
+    color: #ffffff;
+}
+
+.notifications-subscription-main .notifications-subscription-title-main {
+    color: #ffffff;
+}
+
+.notifications-subscription-form {
+    display: grid;
+    grid-template-columns: 452px 232px;
+}
+
+.email-field {
+    width: 452px;
+    border: 0;
+    border-radius: 4px 0 0 4px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+
+    background-color: #F2F2F2;
+    font: inherit;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.email-field:hover {
+    background-color: #E6E6E6;
+}
+
+.email-field:focus-visible {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.email-field:active {
+    border: 2px solid #000000;
+    outline: 3px solid transparent;
+}
+
+.notifications-subscription-form .email-field-main {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.email-field-main:hover {
+    background-color: #F2F2F2;
+}
+
+
+/*Footer*/
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    margin: 40px 70px 30px;
+}
+
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 142px;
+}
+
+.footer-socials-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.social-icon {
+    color: #83B3D3;
+}
+
+.footer-socials-item-link:hover .social-icon {
+    color: #68A2CA;
+}
+
+.footer-socials-item-link:focus-visible .social-icon {
+    color: #68A2CA;
+}
+
+.footer-socials-item-link:active .social-icon {
+    color: #68A2CA;
+    opacity: 0.3;
+}
+
+.contacts-phone {
+    margin: 30px;
+    color: #000000;
+    text-decoration: none;
+
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.contacts-phone:hover, .contacts-phone:focus-visible {
+    color: #756157;
+}
+
+.contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo {
+    color: #000;
+}
+
+.footer-logo-link:hover .footer-logo {
+    color: #756157;
+}
+
+.footer-logo-link:focus {
+    outline: none;
+}
+
+.footer-logo-link:focus-visible .footer-logo {
+    color: #756157;
+}
+
+.footer-logo-link:active .footer-logo {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+/* Modal */
+
+.modal-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+  }
+
+.modal-container-close {
+    display: none;
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 70px;
+    background-color: #ffffff;
+    border-radius: 15%;
+}
+
+.modal-hotel-search {
+    width: 717px;
+    box-sizing: border-box;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 46px;
+    right: 52px;
+    width: 53px;
+    height: 53px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-close-button::before {
+    position: absolute;
+    top: 18px;
+    right: 17px;
+    width: 15px;
+    height: 15px;
+    background-image: url("/images/modal-icons/close.svg");
+    content: "";
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+    opacity: 0.5;
+}
+
+.modal-title {
+    margin-bottom: 64px;
+    text-align: left;
+}
+
+.hotel-search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-field-group-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.hotel-search-label {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.label-icon {
+    position: relative;
+    padding-right: 10px;
+}
+
+.hotel-search-data-field {
+    width: 440px;
+}
+
+.data-field::after {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    background-image: url("/images/modal-icons/calendar.svg");
+    content: "";
+}
+
+.field-group.number-field {
+    justify-content: flex-start;
+    width: 247px;
+}
+
+.number-field-box {
+    display: grid;
+    grid-template-columns: 40px 33px 40px;
+    margin-left: auto;
+}
+
+.field {
+    padding: 12px 20px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    background-color: #F2F2F2;
+    font: inherit;
+    font-weight: 700;
+    color: #000000;
+}
+
+.field:hover {
+    background-color: #E6E6E6;
+}
+
+.field:focus-visible {
+    background-color: #E6E6E6;
+    outline: 3px solid #83B3D3;
+}
+
+.field:active {
+    border: 2px solid #000000;
+    outline: 3px solid transparent;
+}
+
+.data-field-hint {
+    position: absolute;
+    bottom: -24px;
+    left: 137px;
+    padding: 0 20px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.data-field-hint.error-past {
+    color: #FF5757;
+}
+
+.hotel-search-number-field {
+    grid-area: 1 / 1 / 2 / 4;
+    padding: 14px 40px;
+    text-align: center;
+    appearance: textfield;
+}
+
+.number-field-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.minus {
+    z-index: 1;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.plus {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.minus::before {
+    display: block;
+    width: 14px;
+    height: 2px;
+    background: url("/images/modal-icons/minus.svg") no-repeat center;
+    content: "";
+}
+
+.plus::before {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("/images/modal-icons/plus.svg") no-repeat center;
+    content: "";
+}
+
+.number-field-button:hover {
+    opacity: 1;
+}
+
+.number-field-button:focus-visible {
+    opacity: 1;
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.number-field-button:active {
+    opacity: 0.3;
+}
+
+.tooltip {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: -23px;
+}
+
+.tooltip-toggle {
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 50%;
+    background-color: #83B3D3;
+    background-image: url("/images/modal-icons/info.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tooltip-text {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 256px;
+    margin-top: 15px;
+    padding: 15px 18px 18px 22px;
+    background-color: #333333;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.tooltip-text::after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 19px;
+    height: 9px;
+    background-image: url("/images/modal-icons/tongue.svg");
+    content: "";
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+    display: block;
 }
