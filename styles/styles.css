@@ -308,10 +308,12 @@ h1, h2, h3, p {
 
 .description-title {
     margin-bottom: 25px;
+    letter-spacing: -0.1px;
 }
 
 .description-text {
     margin-bottom: 21px;
+    letter-spacing: -0.1px;
 }
 
 /*Adventages*/
@@ -336,7 +338,6 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 92px 85px;
 }
 
@@ -350,6 +351,10 @@ h1, h2, h3, p {
     line-height: 28px;
     color: #000000;
     text-transform: uppercase;
+}
+
+.adventage-blue .adventages-description {
+    letter-spacing: -0.2px;
 }
 
 .adventages-item:not(.recommendation) .adventages-title {
@@ -396,20 +401,24 @@ h1, h2, h3, p {
 }
 
 .adventages-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+    height: 75px;
 }
 
 .recommendation {
-    padding: 80px 85px 81px;
+    padding: 77px 85px 80px;
 }
 
 .find-hotel {
     margin: 0 auto;
-    padding: 96px 304px;
+    padding: 96px 280px;
 }
 
 .find-hotel-title {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .find-hotel-description {
@@ -442,7 +451,7 @@ h1, h2, h3, p {
 }
 
 .inner-header-title {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     font-size: 60px;
     line-height: 78px;
 }
@@ -468,6 +477,7 @@ h1, h2, h3, p {
 
 .breadcrumbs-link {
     color: #ffffff;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -982,11 +992,11 @@ h1, h2, h3, p {
 }
 
 .notifications-subscription-title, .notifications-subscription-title-main {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .notifications-subscription-main {
-    background: rgb(143, 203, 230) url(../images/subscribe-background.jpg) no-repeat 50% 50%;
+    background: rgb(143, 203, 230) url(../images/subscribe-background.jpg) no-repeat top center;
     background-size: cover;
 
     color: #ffffff;
@@ -1046,6 +1056,7 @@ h1, h2, h3, p {
     justify-content: space-between;
     align-items: center;
     width: 1060px;
+    min-height: 50px;
     margin: 40px 70px 30px;
 }
 
@@ -1055,11 +1066,15 @@ h1, h2, h3, p {
     width: 142px;
 }
 
+.footer-socials-item {
+    width: 47px;
+}
+
 .footer-socials-item-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 12px;
 }
 
 .social-icon {
@@ -1097,6 +1112,7 @@ h1, h2, h3, p {
 }
 
 .footer-logo {
+    padding-top: 4px;
     color: #000;
 }
 
