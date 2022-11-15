@@ -47,6 +47,11 @@ body {
   color: #333333;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -682,7 +687,8 @@ p {
   text-align: left;
   border: 2px solid transparent;
   box-sizing: border-box;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-price-input:nth-child(2) {
@@ -692,7 +698,8 @@ p {
 
 .range-price-input::-webkit-outer-spin-button,
 .range-price-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1324,12 +1331,14 @@ p {
   grid-area: 1 / 1 / 2 / 4;
   padding: 12px 36px;
   text-align: center;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .hotel-search-number-field::-webkit-outer-spin-button,
 .hotel-search-number-field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .number-field-button {
