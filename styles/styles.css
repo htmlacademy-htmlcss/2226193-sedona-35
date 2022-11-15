@@ -142,7 +142,7 @@ p {
 }
 
 .button-no-color {
-  padding: 6px 18px;
+  padding: 5px 18px;
   background-color: transparent;
   border: 3px solid transparent;
 }
@@ -263,8 +263,19 @@ p {
 }
 
 .navigation-user-link {
-  display: flex;
-  padding: 21px 11.5px;
+  display: block;
+  padding: 21px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.navigation-search {
+  background-image: url("/images/search.svg");
+}
+
+.navigation-favorites {
+  background-image: url("/images/favorites.svg");
 }
 
 .count-badge {
@@ -276,8 +287,8 @@ p {
   content: "";
   width: 20px;
   height: 20px;
-  right: 5px;
-  top: 10px;
+  right: 4px;
+  top: 0;
   background-color: #7db54f;
   border-radius: 10px;
 
@@ -456,7 +467,7 @@ p {
 .inner-header {
   padding-top: 35px;
   padding-bottom: 70px;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   background: rgb(175, 128, 84) url("../images/catalog-filter-background.jpg") no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -539,7 +550,7 @@ p {
 }
 
 .filter-button {
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-title {
@@ -563,7 +574,7 @@ p {
 .control {
   position: relative;
   display: block;
-  padding-left: 35px;
+  padding-left: 36px;
 }
 
 .control-mark {
@@ -677,7 +688,7 @@ p {
 
 .range-price-input {
   width: 143px;
-  padding: 11px 37px 10px 17px;
+  padding: 10px 37px 10px 17px;
   border-radius: 0 4px 4px 0;
   background-color: #f2f2f2;
   font: inherit;
@@ -768,7 +779,7 @@ p {
   position: relative;
   width: 292px;
   margin-right: 70px;
-  padding: 13px 17px;
+  padding: 12px 18px;
   padding-right: 50px;
   background-color: inherit;
   border: 2px solid #e5e5e5;
@@ -802,6 +813,7 @@ p {
   gap: 8px 0;
   max-width: 160px;
   margin-right: 2px;
+  margin-bottom: 2px;
 }
 
 .sorting-view-item:not(:nth-child(3n)) {
@@ -813,12 +825,11 @@ p {
   display: block;
   box-sizing: border-box;
   width: 48px;
-  height: 47px;
+  height: 48px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 14px;
-
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
@@ -935,6 +946,7 @@ p {
   display: flex;
   align-items: flex-start;
   position: relative;
+  margin-left: 1px;
   margin-bottom: 60px;
 }
 
@@ -952,10 +964,8 @@ p {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-
   background-color: #82b3d3;
   border-radius: 4px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -969,6 +979,7 @@ p {
   width: 60px;
   height: 60px;
   background-color: transparent;
+  letter-spacing: 0.8px;
 }
 
 .pagination-link {
